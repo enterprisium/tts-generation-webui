@@ -20,14 +20,13 @@ def get_all_npz_files():
 
 
 def get_all_npz_hashes():
-    npz_hashes = {}
     for file in get_all_npz_files():
         file_agnostic = file.replace("\\", "/")
         # npz_hashes[file_agnostic] = history_to_hash(
         #     load_npz(os.path.join("./models/bark/bark/assets/prompts/", file))
         # )
 
-    return npz_hashes
+    return {}
 
 
 _cached_hashes = {
