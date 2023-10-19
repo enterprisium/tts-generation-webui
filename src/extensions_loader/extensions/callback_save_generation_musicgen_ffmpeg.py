@@ -45,7 +45,7 @@ comment={metadata_str}
             metadata_input,
             filename,
             format="ogg",
-            map_metadata=f"1",
+            map_metadata="1",
             loglevel="error",
         )
         .overwrite_output()
